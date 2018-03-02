@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.macbookair.myapplication2.activities.DetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarColor" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_details"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/toolbar_details"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/txt_name_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_details"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/profile_image_details"
+        android:textColor="@color/blackColor"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/network_image_details"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/toolbar_details"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/txt_name_details" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name_details"
+        android:layout_toEndOf="@id/profile_image_details"
+        android:background="@drawable/button_delete"
+        android:onClick="delete"
+        android:text="@string/delete"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name_details"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/delete_button"
+        android:background="@drawable/button_edit"
+        android:text="@string/edit"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image_details"
+        android:layout_marginTop="40dp"
+        android:text="@string/products"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/fullname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product"
+        android:layout_marginTop="20dp"
+        android:text="@string/full_name"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/country1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullname1"
+        android:layout_marginTop="20dp"
+        android:text="@string/country"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/email1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country1"
+        android:layout_marginTop="20dp"
+        android:text="@string/email"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/lastseen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email1"
+        android:layout_marginTop="20dp"
+        android:text="@string/last_seen"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/product_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image_details"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="45dp"
+        android:layout_toEndOf="@id/product"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/full_name_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/fullname1"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/country_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullname1"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/country1"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/email_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/email1"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/last_seen_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email1"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/lastseen1"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>
